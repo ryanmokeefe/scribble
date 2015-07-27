@@ -17,6 +17,8 @@ add in `Users` with secure password authentication.
 ## Views + Controllers 
 
 - Add views and controllers. Full CRUD/REST.
+- Remember to add authenticity token to forms
+- use strong params
 
 ## Helpers 
 
