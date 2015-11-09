@@ -8,31 +8,31 @@ with the best content all around the world. It is designed to be built, refined,
 We will start off with two models: `Posts` and `Comments`, and eventually
 add in `Users` with secure password authentication.
 
-## Models + Migrations
+## Models + Migrations (due Wednesday)
 
 - Create ERD for Posts and Comments
 - Create models for Posts and Comments
 - Create migrations for Posts and Comments
 
-## Views + Controllers
+## Views + Controllers (due Wednesday)
 
 - Add views and controllers. Full CRUD/REST.
 - Remember to add authenticity tokens to forms.
 - Use strong params.
 
-## Helpers
+## Helpers (due Friday)
 
 - Convert links, forms, etc. to helpers.
 
-## Routes
+## Routes (due Friday)
 
 - Implement nested routes.
 
-## Sessions
+## Sessions (due Friday)
 
 - Add User model with authentication.
 - Associate Posts with Users.
 
-## Deploy
+## Deploy (due Friday)
 
 - Deploy to Heroku.
