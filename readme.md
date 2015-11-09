@@ -2,7 +2,7 @@
 
 ![](https://dl.dropboxusercontent.com/s/8frf8rblw6pnpds/hipsterlogogenerator_1438007087793.png?dl=0)
 
-is a Ruby on Rails writing application where users can read, write, and interact
+is a Ruby on Rails application where users can read, write, and interact
 with the best content all around the world. It is designed to be built, refined, and deployed over the course of four nights.
 
 We will start off with two models: `Post` and `Comment`, and eventually
