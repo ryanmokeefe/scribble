@@ -30,7 +30,7 @@ add in `User` with secure password authentication.
 
 ## Sessions (due Friday)
 
-- Add User model with authentication.
+- Add User model with authentication using Devise.
 - Associate posts with users.
 
 ## Deploy (due Friday)
