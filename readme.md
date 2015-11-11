@@ -36,3 +36,16 @@ add in `User` with secure password authentication.
 ## Deploy (due Friday)
 
 - Deploy to Heroku.
+
+## Many-to-Many (Bonus)
+
+- Create two additional models: Category and Tag.
+  * Tag represents the join table between Post and Category.
+- The Post show page should include...
+  *  A linkable list of that Post's Categories.
+    * When clicked, each Tag should link to its Category show page. 
+  *  A form that allows you to create a Tag and/or Category.
+    *  If the Category exists, it will create a tag for that post.
+    *  If the Category does not yet exist, it will create that Category and create a Tag for that post.
+    *  If the Category exists AND the post already has that Tag, nothing will happen.
+- The Category show page should display all posts with that particular category.
