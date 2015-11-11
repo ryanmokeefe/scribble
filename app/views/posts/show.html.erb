@@ -6,6 +6,13 @@
   <%= link_to "Edit Post", edit_post_path(@post) %>
   <%= link_to "Delete Post", post_path(@post), method: :delete %>
   <div class='comments'>
+
+  <h3>Tags</h3>
+  <% @post.tags.each do |tag| %>
+    <span><%= tag.category.name %></span>
+  <% end %>
+  <%= link_to "Add new tag", new_post_tag_path(@post) %>
+
   <h3>Comments</h3>
   <%= link_to "Add new comment", new_post_comment_path(@post) %>
   <% @post.comments.each do |comment| %>

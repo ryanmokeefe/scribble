@@ -5,6 +5,12 @@
       <h2><%= link_to post.title, post_path(post) %></h2>
       <time>Updated <%= post.updated_at %></time>
       <p><%= post.body %></p>
+      <% if post.tags.length > 0 %>
+        <h3>Tags</h3>
+        <% post.tags.each do |tag| %>
+          <%= tag.category.name %>
+        <% end %>
+      <% end %>
     </article>
   <% end %>
 </section>
