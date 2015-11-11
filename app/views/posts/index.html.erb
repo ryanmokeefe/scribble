@@ -8,7 +8,7 @@
       <% if post.tags.length > 0 %>
         <h3>Tags</h3>
         <% post.tags.each do |tag| %>
-          <%= tag.category.name %>
+          <%= link_to tag.category.name, category_path(tag.category) %>
         <% end %>
       <% end %>
     </article>

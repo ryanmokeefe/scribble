@@ -6,12 +6,21 @@ class TagsController < ApplicationController
 
   def create
     @post = Post.find(params[:post_id])
-    @tag = @post.tags.create(tag_params)
+    @category = Category.find_by(category_params)
+    if Tag.find_by(post: @post, category: @category)
+    else
+      @tag = @post.tags.create
+      if @tag.category = @category
+      else
+        @tag.category = Category.create(category_params)
+      end
+      @tag.save
+    end
     redirect_to post_path(@post)
   end
 
   private
-  def tag_params
-    params.require(:tag).permit(:name)
+  def category_params
+    params.require(:category).permit(:name)
   end
 end
