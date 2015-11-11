@@ -3,8 +3,8 @@ Post.destroy_all
 Comment.destroy_all
 
 users = User.create([
-  {email:"jesse@jshawl.com", password:"pizzajam"},
-  {email: "jane@jshawl.com", password:"gooblygobbly"}
+  {email:"jesse@jshawl.com", password:"pizzajam!"},
+  {email: "jane@jshawl.com", password:"gooblygobbly!"}
 ])
 
 posts = Post.create([
