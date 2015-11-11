@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
   end
   def create
     @post = Post.find(params[:post_id])
-    @comment = @post.comments.create(comment_params)
+    @comment = @post.comments.create(comment_params.merge(user: current_user))
     redirect_to post_path(@post)
   end
   def edit
@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
   def update
     @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:id])
-    @comment.update(comment_params)
+    @comment.update(comment_params.merge(user:current_user))
     redirect_to post_path(@post)
   end
   def destroy
