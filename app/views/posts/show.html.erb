@@ -12,7 +12,7 @@
     <span><%= link_to tag.category.name, category_path(tag.category) %></span>
   <% end %>
   <%= form_for [@post, @tag] do |f| %>
-    <input type="text" name='category[name]'>
+    <%= text_field_tag :category_name %>
     <%= f.submit "Create Tag" %>
   <% end %>
 
