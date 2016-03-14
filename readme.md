@@ -5,8 +5,27 @@
 is a Ruby on Rails application where users can read, write, and interact
 with the best content all around the world. It is designed to be built, refined, and deployed over the course of four nights.
 
-We will start off with two models: `Post` and `Comment`, and eventually
-add in `User` with secure password authentication.
+We will start off with two models: `Post` and `Comment`.
+
+## Submitting
+
+#### Please do one of the two following:
+
+Fork this repo, and submit homework as a **PULL REQUEST** on this repo.
+```
+$ rails new scribble -d postgresql
+```
+
+**OR...** Create a new repo, and submit homework as an **ISSUE** on this repo.
+```
+$ git clone git@github.com:ga-wdi-exercises/scribble.git
+$ cd scribble
+# ***VERY IMPORTANT***
+$ rails new . -d postgresql
+```
+The `.` creates a new Rails app inside the *CURRENT* folder. Otherwise, it creates a new folder. For instance, if you did `rails new scribble` it would create a `scribble` folder and put the Rails app inside there.
+
+*This is how a lot of people end up with a `scribble` folder inside another `scribble` folder.*
 
 ## Models + Migrations
 
