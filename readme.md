@@ -11,12 +11,12 @@ We will start off with two models: `Post` and `Comment`.
 
 #### Please do one of the two following:
 
-Fork this repo, and submit homework as a **PULL REQUEST** on this repo.
+Create a new repo, and submit homework as an **ISSUE** on this repo.
 ```
 $ rails new scribble -d postgresql
 ```
 
-**OR...** Create a new repo, and submit homework as an **ISSUE** on this repo.
+**OR...** Fork this repo, and submit homework as a **PULL REQUEST** on this repo.
 ```
 $ git clone git@github.com:ga-wdi-exercises/scribble.git
 $ cd scribble
