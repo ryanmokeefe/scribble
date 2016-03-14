@@ -17,7 +17,6 @@ add in `User` with secure password authentication.
 ## Views + Controllers
 
 - Add views and controllers. Full CRUD/REST.
-- Remember to add authenticity tokens to forms.
 - Use strong params.
 
 ## Helpers
@@ -38,7 +37,7 @@ add in `User` with secure password authentication.
   * Tag represents the join table between Post and Category.
 - The Post show page should include...
   *  A linkable list of that Post's Categories.
-    * When clicked, each Tag should link to its Category show page. 
+    * When clicked, each Tag should link to its Category show page.
   *  A form that allows you to create a Tag and/or Category.
     *  If the Category exists, it will create a tag for that post.
     *  If the Category does not yet exist, it will create that Category and create a Tag for that post.
