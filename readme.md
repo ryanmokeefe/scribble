@@ -27,31 +27,33 @@ The `.` creates a new Rails app inside the *CURRENT* folder. Otherwise, it creat
 
 *This is how a lot of people end up with a `scribble` folder inside another `scribble` folder.*
 
+Monday Nights HW:
+Do everything for, models && migrations, index, show, creating and deleting.
+
 ## Models + Migrations
 
 - Create ERD for Post and Comment
 - Create models for Post and Comment
 - Create migrations for Post and Comment
 
-## Views + Controllers
+## Index Feature
+- Create an index where a user can see all posts
+- Each post should link to its respective show page
 
-- Add views and controllers. Full CRUD/REST.
-- Use strong params.
+## Show Feature
+- Create a show where a user can see each individual post.
+- The show page should also show all of the post's comments.
 
-## Helpers
+## Creating
+- Allow the user to create new posts and comments
 
-- Convert links, forms, etc. to helpers.
+## Editing
+- Allow the user to edit existing posts and comments
 
-## Routes
+## Deleting
+- Allow the user to delete existing posts and comments.
 
-- Implement nested routes.
-
-## Deploy (Bonus)
-
-- Deploy to Heroku.
-
-## Many-to-Many (Bonus)
-
+## Bonus
 - Create two additional models: Category and Tag.
   * Tag represents the join table between Post and Category.
 - The Post show page should include...
