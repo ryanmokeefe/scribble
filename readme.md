@@ -29,7 +29,12 @@ The `.` creates a new Rails app inside the *CURRENT* folder. Otherwise, it creat
 
 ## Monday Nights HW:
 
-Do everything for, models && migrations, index, show, creating and deleting.
+Do everything for:
+- models && migrations
+- index
+- show
+- creating
+- deleting
 
 ## Models + Migrations
 
