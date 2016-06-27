@@ -27,15 +27,6 @@ The `.` creates a new Rails app inside the *CURRENT* folder. Otherwise, it creat
 
 *This is how a lot of people end up with a `scribble` folder inside another `scribble` folder.*
 
-## Monday Nights HW:
-
-Do everything for:
-- models && migrations
-- index
-- show
-- creating
-- deleting
-
 ## Models + Migrations
 
 - Create ERD for Post and Comment
