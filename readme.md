@@ -16,6 +16,7 @@ $ git clone git@github.com:ga-wdi-exercises/scribble.git
 $ cd scribble
 $ rails new . -d postgresql
 ```
+> When asked if you want to overwrite the readme, enter "n" (for no).
 
 The `.` creates a new Rails app inside the *CURRENT* folder. Otherwise, it creates a new folder. For instance, if you did `rails new scribble` it would create a `scribble` folder and put the Rails app inside there.
 
