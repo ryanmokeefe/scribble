@@ -1,0 +1,13 @@
+<h1><%= @post.title %></h1>
+<p>by <%= @post.author %></p>
+<img src="<%= @post.img_url %>" alt="<%= @post.title %>">
+<p><%= @post.body %></p>
+
+<h2>Comments: </h2>
+
+<% @comments.each do |comment| %>
+  <div class="comment">
+    <h4><%= comment.author %> - <%= comment.created_at %></h4>
+    <p><%= comment.body %></p>
+  </div>
+<% end %>
