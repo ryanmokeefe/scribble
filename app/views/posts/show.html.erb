@@ -2,6 +2,8 @@
 <p>by <%= @post.author %></p>
 <img src="<%= @post.img_url %>" alt="<%= @post.title %>">
 <p><%= @post.body %></p>
+<p><%= link_to "edit", edit_post_path(@post) %></p>
+<p><%= link_to "x", post_path(@post), method: :delete %></p>
 
 <h2>Comments: </h2>
 
@@ -9,5 +11,14 @@
   <div class="comment">
     <h4><%= comment.author %> - <%= comment.created_at %></h4>
     <p><%= comment.body %></p>
+    <p><%=  link_to "Delete Comment", post_comment_path(@post, comment), method: :delete %></p>
   </div>
+<% end %>
+<h2>New Comment</h2>
+<%= form_for [@post, @post.comments.new] do |f| %>
+  <%= f.label :author  %>
+  <%= f.text_field :author %>
+  <%= f.label :body  %>
+  <%= f.text_area :body %>
+  <%= f.submit %>
 <% end %>
