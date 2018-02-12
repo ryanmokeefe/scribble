@@ -1,0 +1,9 @@
+<h1>Comments</h1>
+
+<% @comment.each do |comment| %>
+
+<h2>
+    <%= link_to comment.title, comment %>
+</h2>
+
+<% end %>
