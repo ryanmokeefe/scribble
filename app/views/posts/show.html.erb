@@ -1,9 +1,16 @@
-<h1> <%= @comment.title %> <h1>
+<h1> <%= @post.title %> </h1>
+<h3> <%= link_to "Edit Post", edit_post_path(@post) %> </h3>
+</br>
+<h2> <%= @post.content %> </h2>
 
-<h2> <%= @comment.content  %> <h2>
-
-<ul>
-
-
-
-</ul>
+<%= link_to "Add a comment", new_post_comment_path(@post, @comment) %>
+</br>
+<div class="comments-box">
+<% @post.comments.each do |comment| %>
+    <div>
+        <h2>
+            <%= comment.title %>
+        </h2>
+        <%= comment.content %>
+    </div>
+<% end %>

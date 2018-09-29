@@ -1,9 +1,15 @@
-<h1>Comments</h1>
+<h1> All Posts </h1>
+<%= link_to "Add Post", new_post_path %>
 
-<% @comment.each do |comment| %>
-
-<h2>
-    <%= link_to comment.title, comment %>
-</h2>
-
+<% @posts.each do |post| %>
+    <div>
+        <h2>
+            Title: <%= link_to post.title, post %>
+        </h2>
+        </br>
+        <p>
+            <%= post.content %>
+        </p>
+       
+    </div>
 <% end %>

@@ -1,33 +1,34 @@
 class PostsController < ApplicationController
     
         def index
-            @posts = Comment.all
+            @posts = Post.all
         end
     
         def show
-            @post = post.find(params[:id])
+            @post = Post.find(params[:id])
         end
     
         def new
-            @post = post.new
+            @post = Post.new
         end
     
         def create
-            @post = post.create!(post_params)
+            @post = Post.create!(post_params)
             redirect_to post_path(@post)
         end
     
         def edit
-            @post = post.find(params[:id])
+            @post = Post.find(params[:id])
         end
     
         def update
-            @post = post.find(params[:id])
+            @post = Post.find(params[:id])
             @post.update(post_params)
+            redirect_to post_path(@post)
         end
     
         def destroy
-            @post = post.find(params[:id])
+            @post = Post.find(params[:id])
             @post.destroy
             redirect_to posts_path
         end
